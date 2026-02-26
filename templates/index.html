@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salvabioverde</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+  <header class="container header">
+    <div>
+      <h1>Salvabioverde 🌿</h1>
+      <p class="muted">Conectamos personas con ayuda real para cuidar plantas</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero card">
+      <div class="hero-grid">
+        <div>
+          <h2 class="hero-title">No tires tu planta… podemos ayudar.</h2>
+
+          <p class="muted hero-text">
+            Muchas plantas mueren por falta de información, no por falta de amor.
+            En Salvabioverde te conectamos con personas que saben cuidarlas.
+          </p>
+
+          <p class="muted hero-text">
+            Esa planta que te regalaron, la que viste crecer…
+            todavía se puede salvar.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btnLink primary" href="#pedir">Quiero salvar mi planta</a>
+            <a class="btnLink ghost" href="#buscar">Ver profesionales</a>
+          </div>
+
+          <div class="bullets">
+            <div class="bullet">✅ Diagnóstico claro antes de gastar.</div>
+            <div class="bullet">✅ Consejos simples que funcionan.</div>
+            <div class="bullet">✅ Pagás solo si querés ayuda personalizada.</div>
+            <div class="bullet">✅ Primera orientación gratuita.</div>
+          </div>
+        </div>
+
+        <!-- FOTOS -->
+        <div>
+          <h3 style="margin:0 0 10px;">Antes / Después</h3>
+
+          <div class="beforeAfter">
+            <figure class="shot">
+              <img src="/static/img/foto1enfer.jfif" alt="Planta enferma antes del cuidado">
+              <figcaption>Antes</figcaption>
+            </figure>
+
+            <figure class="shot">
+              <img src="/static/img/foto1sana.jfif" alt="Planta sana después del cuidado">
+              <figcaption>Después</figcaption>
+            </figure>
+
+            <figure class="shot">
+              <img src="/static/img/foto2enfer.jfif" alt="Planta enferma antes del cuidado">
+              <figcaption>Antes</figcaption>
+            </figure>
+
+            <figure class="shot">
+              <img src="/static/img/foto2sana.jfif" alt="Planta sana después del cuidado">
+              <figcaption>Después</figcaption>
+            </figure>
+          </div>
+
+          <p class="muted small" style="margin-top:10px;">
+            Cada planta cuenta una historia. No la dejes terminar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESIONALES -->
+    <section id="buscar" class="card">
+      <h2>Profesionales disponibles</h2>
+      <p class="muted">Contactá directo por WhatsApp.</p>
+      <div id="proList">Cargando...</div>
+    </section>
+
+    <!-- PEDIR AYUDA -->
+    <section id="pedir" class="card">
+      <h2>Necesito ayuda</h2>
+      <p class="muted">Contame qué le pasa y te recomendamos 3 personas.</p>
+
+      <form id="helpForm">
+        <label>Tu nombre *</label>
+        <input id="hNombre" required placeholder="Ej: Lili">
+
+        <label>Tipo de ayuda *</label>
+        <select id="hTipo" required>
+          <option value="">Elegí</option>
+          <option>Diagnóstico por foto</option>
+          <option>Plagas</option>
+          <option>Riego</option>
+          <option>Poda</option>
+          <option>Huerta</option>
+          <option>Interior</option>
+        </select>
+
+        <label>Detalle *</label>
+        <textarea id="hDetalle" required placeholder="Ej: hojas amarillas, manchas, bichitos, riego, luz..."></textarea>
+
+        <button class="btn primary" type="submit">Quiero salvar mi planta</button>
+        <p class="muted small" id="helpMsg"></p>
+      </form>
+
+      <div class="recBox" id="recBox" style="display:none;">
+        <h3 style="margin:12px 0 8px;">Recomendados para vos</h3>
+        <div id="recList"></div>
+      </div>
+    </section>
+
+    <footer class="container footer">
+      <p class="muted small">Salvabioverde – Proyecto de Lili 🌿💚</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+  </main>
+</body>
+</html>
